@@ -1,4 +1,6 @@
-export default function İnput( {id, label, placeholder,type, register, errorMesage}) {
+import React from "react" 
+
+export default function Input( {id, label, placeholder,type, register, errorMesage}) {
     return (
         <div className="input-group">
             <label htmlFor={id}>{label}</label>
