@@ -32,7 +32,7 @@ function KayitOl() {
             <Input id="phoneNumber" label="Telefon Numaranız" type="text" placeholder="Telefon Numaranızı Giriniz" register={{...register("phoneNumber")}} errorMesage={errors.phoneNumber?.message} />
             <Input id="password" label="Şifre" type="password" placeholder="Şifrenizi Giriniz" register={{...register("password")}}  errorMesage={errors.password?.message}/>
             <Input id="confirmPassword" label="Şifre Tekrarı" type="password" placeholder="Şifrenizi Tekrar Giriniz" register={{...register("confirmPassword")}}  errorMesage={errors.confirmPassword?.message}/>
-            <button className="btn">Giriş</button>
+            <button className="btn">Kayıt Ol</button>
         </form>
     </div>
 }
