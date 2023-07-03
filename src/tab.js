@@ -43,11 +43,11 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: '100%' }} >
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
+    <Box>
+      <Box >
+        <Tabs className='tabs' value={value} onChange={handleChange} aria-label="secondary tabs example" centered style={{fontFamily:'Poppins'}}>
+          <Tab label="Giriş Yap" {...a11yProps(0)} />
+          <Tab label="Kayit Ol" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

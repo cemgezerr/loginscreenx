@@ -27,11 +27,10 @@ function App() {
 
     return <div className="sign-up">
         <form onSubmit={handleSubmit(formSubmit)}>
-            <h1>Giriş Yap</h1>
             <Input id="email" label="E-Mail" type="text" placeholder="Enter E-Mail" register={{...register("email")}}  errorMesage={errors.email?.message}/>
             <Input id="password" label="Şifre" type="password" placeholder="Enter Password" register={{...register("password")}}  errorMesage={errors.password?.message}/>
             <FormControlLabel control={<Checkbox />} label="Beni Hatırla" />
-            <button>Giriş</button>
+            <button className="btn">Giriş</button>
         </form>
     </div>
 }

@@ -1,28 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 
-
- *,
- *::after,
- *::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+ *{
+   font-family: 'Poppins';
  }
  body{
-    background-color: #eee;
-    font-family: "Roboto", sans-serif;
+    background-color: #a0caf5;
+
  }
  .sign-up{
-    background-color: #fff;
-    max-width: 30rem;
-    margin: 2rem auto;
+    background-color: #f5f5f59a;
+    max-width: 25rem;
+    margin: 1rem auto;
     padding: 2rem;
+    padding-top: 5rem;
+    border-radius: 10px;
+
+ }
+ .tabs{
+   position: relative;
+   top: 100px;
 
  }
  .input-group{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    
+
 
  }
  input {
@@ -30,20 +33,37 @@ padding: 0.5rem;
 border: 1px solid gray;
 font-size: 1rem;
 font-family: inherit;
+border-radius: 5px;
  }
+
  form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
  }
-button{
+.btn{
     padding: 0.5rem;
-    background-color: blue;
+    background-color: rgb(115, 115, 241);
     border: none;
     font-size: 1.2rem;
-    color: white;
+    color: #f5f5f5;
+    border-radius: 10px;
+
+}
+.btn:hover{
+   background-color:  rgb(84, 84, 255);
+}
+.btn:active{
+   background-color: rgba(17, 0, 250, 0.774);
 }
 .error-message{
     color: red;
     font-size: 0.8rem;
 }
+
+ .screen{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+ }
