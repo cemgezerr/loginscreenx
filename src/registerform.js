@@ -27,11 +27,11 @@ function KayitOl() {
 
     return <div className="sign-up">
         <form onSubmit={handleSubmit(formSubmit)}>
-            <Input id="username" label="Adınız" type="text" placeholder="Enter Username" register={{...register("username")}} errorMesage={errors.username?.message} />
-            <Input id="email" label="E-Mail" type="text" placeholder="Enter E-Mail" register={{...register("email")}}  errorMesage={errors.email?.message}/>
-            <Input id="phoneNumber" label="Telefon Numaranız" type="text" placeholder="Enter Phone Number" register={{...register("phoneNumber")}} errorMesage={errors.phoneNumber?.message} />
-            <Input id="password" label="Şifre" type="password" placeholder="Enter Password" register={{...register("password")}}  errorMesage={errors.password?.message}/>
-            <Input id="confirmPassword" label="Şifre Tekrarı" type="password" placeholder="Enter Password" register={{...register("confirmPassword")}}  errorMesage={errors.confirmPassword?.message}/>
+            <Input id="username" label="Adınız" type="text" placeholder="Adınızı Giriniz" register={{...register("username")}} errorMesage={errors.username?.message} />
+            <Input id="email" label="E-Mail" type="text" placeholder="E-Mailinizi giriniz" register={{...register("email")}}  errorMesage={errors.email?.message}/>
+            <Input id="phoneNumber" label="Telefon Numaranız" type="text" placeholder="Telefon Numaranızı Giriniz" register={{...register("phoneNumber")}} errorMesage={errors.phoneNumber?.message} />
+            <Input id="password" label="Şifre" type="password" placeholder="Şifrenizi Giriniz" register={{...register("password")}}  errorMesage={errors.password?.message}/>
+            <Input id="confirmPassword" label="Şifre Tekrarı" type="password" placeholder="Şifrenizi Tekrar Giriniz" register={{...register("confirmPassword")}}  errorMesage={errors.confirmPassword?.message}/>
             <button className="btn">Giriş</button>
         </form>
     </div>
