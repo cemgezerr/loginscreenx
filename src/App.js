@@ -7,7 +7,7 @@ const schema = yup.object({
     username:yup.string().required("İsminizi yazınız"),
     phoneNumber:yup.string().required("Numaranızı giriniz").matches(/([(]?)([5])([0-9]{2})([)]?)([\s]?)([0-9]{3})([\s]?)([0-9]{2})([\s]?)([0-9]{2})$/g,"(555)5555555 şeklinde bir numara giriniz"),
     email:yup.string().required("E-Postanızı giriniz").email("aaaaa@aaa.com şeklinde olmalıdır"),
-    password:yup.string().min(6,"En az 6 karakter olmalı").max(18,"18 karakterden fazlası olamaz")
+    password:yup.string().required("Şifrenizi giriniz").min(6,"En az 6 karakter olmalı").max(18,"18 karakterden fazlası olamaz")
 })
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
             <İnput id="email" label="E-Mail" type="text" placeholder="Enter E-Mail" register={{...register("email")}}  errorMesage={errors.email?.message}/>
             <İnput id="phoneNumber" label="Telefon Numaranız" type="text" placeholder="Enter Phone Number" register={{...register("phoneNumber")}} errorMesage={errors.phoneNumber?.message} />
             <İnput id="password" label="Şifre" type="password" placeholder="Enter Password" register={{...register("password")}}  errorMesage={errors.password?.message}/>
-            <button>Sign Up</button>
+            <button>Giriş</button>
         </form>
     </div>
 }
