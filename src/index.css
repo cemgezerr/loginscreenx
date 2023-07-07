@@ -39,13 +39,15 @@ font-size: 1rem;
 font-family: inherit;
 border-radius: 3px;
 border-color: rgb(53, 209, 236);
+outline: none;
  }
  input:hover{
    border: 1px solid rgb(108, 243, 248);
    box-shadow: 1px 1px rgb(108, 243, 248) ;
+   border-radius: 5px;
  }
  input:focus{
-   border: 3px solid rgb(6, 50, 247);
+   border: 3px solid rgba(3, 150, 248, 0.384);
  }
 
 
